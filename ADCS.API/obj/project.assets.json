@@ -72,6 +72,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "ADCS.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ADCS.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ADCS.Domain.dll": {}
+        }
       }
     }
   },
@@ -200,10 +210,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "ADCS.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ADCS.Domain/ADCS.Domain.csproj",
+      "msbuildProject": "../ADCS.Domain/ADCS.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ADCS.Domain >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -233,7 +249,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Domain\\ADCS.Domain.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Domain\\ADCS.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
