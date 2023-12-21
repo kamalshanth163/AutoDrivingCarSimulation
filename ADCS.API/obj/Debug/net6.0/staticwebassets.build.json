@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3LVI3KXr8C2JuNtXRs27DmaJ2Zk6IecU9xdhe1OVwo8=",
+  "Source": "ADCS.API",
+  "BasePath": "_content/ADCS.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
