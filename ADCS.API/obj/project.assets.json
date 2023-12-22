@@ -73,6 +73,19 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "ADCS.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ADCS.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ADCS.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ADCS.Application.dll": {}
+        }
+      },
       "ADCS.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -81,6 +94,19 @@
         },
         "runtime": {
           "bin/placeholder/ADCS.Domain.dll": {}
+        }
+      },
+      "ADCS.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ADCS.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ADCS.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ADCS.Infrastructure.dll": {}
         }
       }
     }
@@ -211,15 +237,27 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
+    "ADCS.Application/1.0.0": {
+      "type": "project",
+      "path": "../ADCS.Application/ADCS.Application.csproj",
+      "msbuildProject": "../ADCS.Application/ADCS.Application.csproj"
+    },
     "ADCS.Domain/1.0.0": {
       "type": "project",
       "path": "../ADCS.Domain/ADCS.Domain.csproj",
       "msbuildProject": "../ADCS.Domain/ADCS.Domain.csproj"
+    },
+    "ADCS.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../ADCS.Infrastructure/ADCS.Infrastructure.csproj",
+      "msbuildProject": "../ADCS.Infrastructure/ADCS.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ADCS.Application >= 1.0.0",
       "ADCS.Domain >= 1.0.0",
+      "ADCS.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -250,8 +288,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Application\\ADCS.Application.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Application\\ADCS.Application.csproj"
+            },
             "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Domain\\ADCS.Domain.csproj": {
               "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Domain\\ADCS.Domain.csproj"
+            },
+            "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Infrastructure\\ADCS.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Infrastructure\\ADCS.Infrastructure.csproj"
             }
           }
         }

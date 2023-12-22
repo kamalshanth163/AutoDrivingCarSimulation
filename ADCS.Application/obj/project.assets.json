@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ADCS.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ADCS.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ADCS.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ADCS.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ADCS.Domain/ADCS.Domain.csproj",
+      "msbuildProject": "../ADCS.Domain/ADCS.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ADCS.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\DELL\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Domain\\ADCS.Domain.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Domain\\ADCS.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

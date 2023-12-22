@@ -28,8 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Application\\ADCS.Application.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Application\\ADCS.Application.csproj"
+              },
               "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Domain\\ADCS.Domain.csproj": {
                 "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Domain\\ADCS.Domain.csproj"
+              },
+              "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Infrastructure\\ADCS.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Infrastructure\\ADCS.Infrastructure.csproj"
               }
             }
           }
@@ -71,6 +77,64 @@
         }
       }
     },
+    "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Application\\ADCS.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Application\\ADCS.Application.csproj",
+        "projectName": "ADCS.Application",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Application\\ADCS.Application.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Domain\\ADCS.Domain.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Domain\\ADCS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Domain\\ADCS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -95,6 +159,64 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Infrastructure\\ADCS.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Infrastructure\\ADCS.Infrastructure.csproj",
+        "projectName": "ADCS.Infrastructure",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Infrastructure\\ADCS.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Application\\ADCS.Application.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\AutoDrivingCarSimulation\\ADCS.Application\\ADCS.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

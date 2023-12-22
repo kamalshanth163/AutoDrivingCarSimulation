@@ -25,3 +25,9 @@ C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.API\obj\Debug\net6.0\refint\
 C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.API\obj\Debug\net6.0\ADCS.API.pdb
 C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.API\obj\Debug\net6.0\ADCS.API.genruntimeconfig.cache
 C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.API\obj\Debug\net6.0\ref\ADCS.API.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.API\bin\Debug\net6.0\ADCS.Application.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.API\bin\Debug\net6.0\ADCS.Domain.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.API\bin\Debug\net6.0\ADCS.Infrastructure.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.API\bin\Debug\net6.0\ADCS.Application.pdb
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.API\bin\Debug\net6.0\ADCS.Domain.pdb
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.API\bin\Debug\net6.0\ADCS.Infrastructure.pdb

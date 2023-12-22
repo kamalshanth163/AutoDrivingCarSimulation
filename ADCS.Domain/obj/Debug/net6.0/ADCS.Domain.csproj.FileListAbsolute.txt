@@ -1,0 +1,12 @@
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\bin\Debug\net6.0\ADCS.Domain.deps.json
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\bin\Debug\net6.0\ADCS.Domain.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\bin\Debug\net6.0\ADCS.Domain.pdb
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\obj\Debug\net6.0\ADCS.Domain.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\obj\Debug\net6.0\ADCS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\obj\Debug\net6.0\ADCS.Domain.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\obj\Debug\net6.0\ADCS.Domain.AssemblyInfo.cs
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\obj\Debug\net6.0\ADCS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\obj\Debug\net6.0\ADCS.Domain.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\obj\Debug\net6.0\refint\ADCS.Domain.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\obj\Debug\net6.0\ADCS.Domain.pdb
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Domain\obj\Debug\net6.0\ref\ADCS.Domain.dll

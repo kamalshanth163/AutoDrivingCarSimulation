@@ -1,0 +1,17 @@
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\bin\Debug\net6.0\ADCS.Infrastructure.deps.json
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\bin\Debug\net6.0\ADCS.Infrastructure.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\bin\Debug\net6.0\ADCS.Infrastructure.pdb
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\bin\Debug\net6.0\ADCS.Application.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\bin\Debug\net6.0\ADCS.Domain.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\bin\Debug\net6.0\ADCS.Application.pdb
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\bin\Debug\net6.0\ADCS.Domain.pdb
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\obj\Debug\net6.0\ADCS.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\obj\Debug\net6.0\ADCS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\obj\Debug\net6.0\ADCS.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\obj\Debug\net6.0\ADCS.Infrastructure.AssemblyInfo.cs
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\obj\Debug\net6.0\ADCS.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\obj\Debug\net6.0\ADCS.Infrastructure.csproj.CopyComplete
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\obj\Debug\net6.0\ADCS.Infrastructure.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\obj\Debug\net6.0\refint\ADCS.Infrastructure.dll
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\obj\Debug\net6.0\ADCS.Infrastructure.pdb
+C:\Users\DELL\Desktop\AutoDrivingCarSimulation\ADCS.Infrastructure\obj\Debug\net6.0\ref\ADCS.Infrastructure.dll

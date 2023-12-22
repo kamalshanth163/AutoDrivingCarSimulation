@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ADCS.Application\ADCS.Application.csproj" />
     <ProjectReference Include="..\ADCS.Domain\ADCS.Domain.csproj" />
+    <ProjectReference Include="..\ADCS.Infrastructure\ADCS.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
