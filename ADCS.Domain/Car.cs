@@ -16,6 +16,7 @@
 
             Initialize();
         }
+
         public Car(Car other)
         {
             Position = new Position(other.Position.X, other.Position.Y);
@@ -24,26 +25,18 @@
             Initialize();
         }
 
-        public CarState Drive(string commands, Field field)
+        public Car Drive(string commands)
         {
-            var carState = new CarState(this);
-
             foreach (var command in commands)
             {
                 commandSettings[command.ToString()].Invoke();
-                if (!IsCarWithinField(Position, field))
-                {
-                    carState.State = "Failure";
-                    return carState;
-                }
             }
-
-            return carState;
+            return this;
         }
 
-        private bool IsCarWithinField(Position position, Field field)
+        public string GetCurrentPosition()
         {
-            return (position.X <= field.MaxX && position.X >= 0) && (position.Y <= field.MaxY && position.Y >= 0);
+            return $"{Position.X} {Position.Y} {Direction.Face}";
         }
 
         private void Initialize()
@@ -52,10 +45,10 @@
             commandSettings.Add("L", () => Turn("L"));
             commandSettings.Add("R", () => Turn("R"));
 
-            positionSettings.Add("N", () => { Position.Y++; });
-            positionSettings.Add("S", () => { Position.Y--; });
-            positionSettings.Add("E", () => { Position.X++; });
-            positionSettings.Add("W", () => { Position.X--; });
+            positionSettings.Add("N", () => { if (Position.Y+1 <= Field.MaxY) Position.Y++; });
+            positionSettings.Add("S", () => { if (Position.Y-1 >= 0) Position.Y--; });
+            positionSettings.Add("E", () => { if (Position.X+1 <= Field.MaxX) Position.X++; });
+            positionSettings.Add("W", () => { if (Position.X-1 >= 0) Position.X--; });
 
             directionSettings.Add("N", (side) => { Direction.Face = side == "L" ? "W" : "E"; });
             directionSettings.Add("S", (side) => { Direction.Face = side == "L" ? "E" : "W"; });

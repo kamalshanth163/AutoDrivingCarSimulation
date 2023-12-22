@@ -4,14 +4,16 @@ namespace ADCS.Application
 {
     public class SimulatorRepository : ISimulatorRepository
     {
-        public Field CreateField(string fieldInput)
+        public void SetField(string fieldInput)
         {
             var values = fieldInput.Trim().Split(" ");
             var width = int.Parse(values[0]);
             var height = int.Parse(values[1]);
 
-            var field = new Field(width, height);
-            return field;
+            Field.Width = width;
+            Field.Height = height;
+            Field.MaxX = width - 1;
+            Field.MaxY = height - 1;
         }
 
         public void CreatePositionAndDirection(string positionInput, out Position position, out Direction direction)

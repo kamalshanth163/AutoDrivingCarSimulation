@@ -4,7 +4,7 @@ namespace ADCS.Application
 {
     public interface ISimulatorRepository
     {
-        Field CreateField(string fieldInput);
+        void SetField(string fieldInput);
 
         void CreatePositionAndDirection(string positionInput, out Position position, out Direction direction);
 

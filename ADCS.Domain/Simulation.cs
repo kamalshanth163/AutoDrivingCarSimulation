@@ -2,17 +2,15 @@
 {
     public class Simulation
     {
-        public Field Field { get; set; }
+        public FieldDto Field { get; set; }
         public Car CarStart { get; set; }
         public Car CarEnd { get; set; }
-        public string State { get; set; }
 
-        public Simulation(Field field, Car carStart, Car carEnd, string state)
+        public Simulation(FieldDto field, Car carStart, Car carEnd)
         {
             Field = field;
             CarStart = carStart;
             CarEnd = carEnd;
-            State = state;
         }
 
     }

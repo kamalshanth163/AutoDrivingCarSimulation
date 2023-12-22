@@ -14,10 +14,21 @@ namespace ADCS.API.Controllers
             _simulatorService = simulatorService;
         }
 
-        [HttpPost]
-        public Simulation Execute([FromBody] Instruction instruction)
+        // Returns current position of the Car
+
+        [HttpPost("execution")]
+        public async Task<string> Execute([FromBody] Instruction instruction) 
         {
-            return _simulatorService.Execute(instruction);
+            var simulation = await _simulatorService.Execute(instruction);
+            return simulation.CarEnd.GetCurrentPosition();
+        }
+
+        // Returns detailed information (Field, Initial and Current Positions of the Car)
+
+        [HttpPost("detailed-execution")]
+        public async Task<Simulation> DetailedExecute([FromBody] Instruction instruction) 
+        {
+            return await _simulatorService.Execute(instruction);
         }
     }
 }

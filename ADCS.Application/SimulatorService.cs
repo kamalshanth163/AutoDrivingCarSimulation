@@ -12,19 +12,19 @@ namespace ADCS.Application
             _repository = repository;
             _driveService = driveService;
         }
-        public Simulation Execute(Instruction instruction)
+        public async Task<Simulation> Execute(Instruction instruction)
         {
-            var field = _repository.CreateField(instruction.FieldInput);
+            _repository.SetField(instruction.FieldInput);
 
             _repository.CreatePositionAndDirection(instruction.PositionInput, out Position position, out Direction direction);
 
             var carStart = _repository.CreateCar(position, direction);
 
-            var carState = _driveService.DriveCar(instruction.Commands, field, new Car(carStart));
+            var carEnd = _driveService.DriveCar(instruction.Commands, new Car(carStart));
 
-            var carEnd = carState.Car;
+            var fieldDto = new FieldDto();
 
-            return new Simulation(field, carStart, carEnd, carState.State);
+            return new Simulation(fieldDto, carStart, carEnd);
         }
     }
 }

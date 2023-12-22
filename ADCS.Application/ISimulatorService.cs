@@ -4,6 +4,6 @@ namespace ADCS.Application
 {
     public interface ISimulatorService
     {
-        Simulation Execute(Instruction instruction);
+        Task<Simulation> Execute(Instruction instruction);
     }
 }

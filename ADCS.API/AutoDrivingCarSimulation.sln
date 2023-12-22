@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADCS.Application", "..\ADCS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADCS.Infrastructure", "..\ADCS.Infrastructure\ADCS.Infrastructure.csproj", "{BA6D387F-4359-425D-8C1E-5C18700747C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADCS.Tests", "..\ADCS.Tests\ADCS.Tests.csproj", "{81F77F72-DEA9-4A02-902B-8D285B7A8415}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BA6D387F-4359-425D-8C1E-5C18700747C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA6D387F-4359-425D-8C1E-5C18700747C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA6D387F-4359-425D-8C1E-5C18700747C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F77F72-DEA9-4A02-902B-8D285B7A8415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F77F72-DEA9-4A02-902B-8D285B7A8415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F77F72-DEA9-4A02-902B-8D285B7A8415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F77F72-DEA9-4A02-902B-8D285B7A8415}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
