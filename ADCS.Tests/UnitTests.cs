@@ -35,16 +35,16 @@ namespace ADCS.Tests
             //_mockSimulatorRepository.Object.CreatePositionAndDirection(instruction.PositionInput, out Position position, out Direction direction);
 
             // Mock the Execute method of ISimulatorService
-            //var simulatedResult = new Simulation(); // Create a sample simulation result
-            //_mockSimulatorService.Setup(service => service.Execute(instruction)).ReturnsAsync(simulatedResult);
+            var simulatedResult = new Simulation(); // Create a sample simulation result
+            _mockSimulatorService.Setup(service => service.Execute(instruction)).ReturnsAsync(simulatedResult);
 
-            //// Act
-            //var result = await _controller.Execute(instruction);
+            // Act
+            var result = await _controller.Execute(instruction);
 
-            //// Assert
-            //Assert.IsInstanceOf<ActionResult<Simulation>>(result);
-            //Assert.IsNotNull(result.Value);
-            //Assert.AreEqual(simulatedResult, result.Value);
+            // Assert
+            Assert.IsInstanceOf<ActionResult<Simulation>>(result);
+            Assert.IsNotNull(result.Value);
+            Assert.AreEqual(simulatedResult, result.Value);
         }
     }
 }
