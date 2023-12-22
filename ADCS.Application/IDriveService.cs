@@ -4,6 +4,6 @@ namespace ADCS.Application
 {
     public interface IDriveService
     {
-        Car DriveCar(string commands, Field field, Car carStart);
+        CarState DriveCar(string commands, Field field, Car carStart);
     }
 }

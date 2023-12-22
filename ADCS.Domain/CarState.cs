@@ -3,12 +3,11 @@
     public class CarState
     {
         public Car Car { get; set; }
-        public string State { get; set; }
+        public string State { get; set; } = "Success";
 
-        public CarState(Car car, string state)
+        public CarState(Car car)
         {
             Car = car;
-            State = state;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using ADCS.Domain;
+﻿using ADCS.Application;
+using ADCS.Domain;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ADCS.API.Controllers
@@ -7,10 +8,16 @@ namespace ADCS.API.Controllers
     [ApiController]
     public class SimulatorController : ControllerBase
     {
-        [HttpPost]
-        public async Task<Simulation> Execute([FromBody] Instruction instruction)
+        private readonly ISimulatorService _simulatorService;
+        public SimulatorController(ISimulatorService simulatorService)
         {
-            throw new NotImplementedException();
+            _simulatorService = simulatorService;
+        }
+
+        [HttpPost]
+        public Simulation Execute([FromBody] Instruction instruction)
+        {
+            return _simulatorService.Execute(instruction);
         }
     }
 }

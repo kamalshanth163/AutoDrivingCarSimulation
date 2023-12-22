@@ -16,18 +16,34 @@
 
             Initialize();
         }
-
-        public CarState Drive(string commands)
+        public Car(Car other)
         {
-            string state = null;
+            Position = new Position(other.Position.X, other.Position.Y);
+            Direction = new Direction(other.Direction.Face);
+
+            Initialize();
+        }
+
+        public CarState Drive(string commands, Field field)
+        {
+            var carState = new CarState(this);
 
             foreach (var command in commands)
             {
                 commandSettings[command.ToString()].Invoke();
+                if (!IsCarWithinField(Position, field))
+                {
+                    carState.State = "Failure";
+                    return carState;
+                }
             }
 
-            var carState = new CarState(this, state);
             return carState;
+        }
+
+        private bool IsCarWithinField(Position position, Field field)
+        {
+            return (position.X <= field.MaxX && position.X >= 0) && (position.Y <= field.MaxY && position.Y >= 0);
         }
 
         private void Initialize()

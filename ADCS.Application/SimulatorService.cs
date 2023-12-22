@@ -12,7 +12,7 @@ namespace ADCS.Application
             _repository = repository;
             _driveService = driveService;
         }
-        public Task<Simulation> Execute(Instruction instruction)
+        public Simulation Execute(Instruction instruction)
         {
             var field = _repository.CreateField(instruction.FieldInput);
 
@@ -20,9 +20,11 @@ namespace ADCS.Application
 
             var carStart = _repository.CreateCar(position, direction);
 
-            var carEnd = _driveService.DriveCar(instruction.Commands, field, carStart);
+            var carState = _driveService.DriveCar(instruction.Commands, field, new Car(carStart));
 
-            throw new NotImplementedException();
+            var carEnd = carState.Car;
+
+            return new Simulation(field, carStart, carEnd, carState.State);
         }
     }
 }

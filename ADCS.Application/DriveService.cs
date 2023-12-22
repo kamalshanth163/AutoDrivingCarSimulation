@@ -4,11 +4,9 @@ namespace ADCS.Application
 {
     public class DriveService : IDriveService
     {
-        public Car DriveCar(string commands, Field field, Car carStart)
+        public CarState DriveCar(string commands, Field field, Car carStart)
         {
-            var carEnd = carStart.Drive(commands);
-
-            return carEnd;
+            return carStart.Drive(commands, field);
         }
     }
 }
