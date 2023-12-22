@@ -16,7 +16,7 @@ namespace ADCS.API.Controllers
 
 
         [HttpPost("{detailed}")]
-        public async Task<ActionResult> Execute([FromBody] Instruction instruction, bool detailed) 
+        public async Task<ActionResult> Execute([FromBody] Instruction instruction, bool detailed = false) 
         {
             var simulation = await _simulatorService.Execute(instruction);
 
